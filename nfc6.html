@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentasi NFC - Prinsip Elektromagnetik</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/css/reveal.min.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+    }
+    
+    .reveal {
+      background-color: #fff;
+    }
+    
+    .slides section {
+      background-color: #fff;
+      color: #333;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    
+    .slides h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .slides p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .slides ul {
+      text-align: left;
+      margin-left: 40px;
+    }
+    
+    .slides li {
+      margin-bottom: 5px;
+    }
+  </style>
+  <style>
+    /* CSS untuk latar belakang */
+    body {
+      background-image: linear-gradient(to bottom, #f1f1f1, #e1e1e1);
+    }
+
+    /* CSS untuk judul slide */
+    .slides h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* CSS untuk teks paragraf */
+    .slides p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* CSS untuk daftar */
+    .slides ul {
+      text-align: left;
+      margin-left: 40px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* CSS untuk tombol navigasi slide */
+    .reveal .controls {
+      color: #555;
+    }
+
+    /* CSS untuk tombol navigasi slide aktif */
+    .reveal .controls .navigate-next,
+    .reveal .controls .navigate-prev,
+    .reveal .controls .navigate-down,
+    .reveal .controls .navigate-up {
+      background-color: #333;
+    }
+
+    /* CSS untuk tanda panah navigasi slide */
+    .reveal .controls .navigate-right::before,
+    .reveal .controls .navigate-left::before,
+    .reveal .controls .navigate-down::before,
+    .reveal .controls .navigate-up::before {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <section>
+        <h2>Selamat datang </h2>
+        <p>Bersama kami membangun negeri! asik </p>
+      </section>
+
+      <!-- Slide 2 -->
+      <section>
+        <h2>Tentang NFC</h2>
+        <p>NFC (Near Field Communication) adalah teknologi komunikasi jarak dekat.</p>
+      </section>
+
+      <!-- Slide 3 -->
+      <section>
+        <h2>Cara Kerja NFC</h2>
+        <ul>
+          <li>Prinsip dasar elektromagnetik</li>
+          <li>Mode pembaca dan mode tag</li>
+          <li>Frekuensi operasi NFC</li>
+          <li>Proses pertukaran data</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4 -->
+      <section>
+        <h2>Prinsip Dasar Elektromagnetik</h2>
+	<p>NFC beroperasi berdasarkan prinsip dasar elektromagnetik yang menyatakan bahwa perubahan medan magnet akan menghasilkan medan listrik, dan sebaliknya, perubahan medan listrik akan menghasilkan medan magnet. Ketika dua perangkat NFC berada dalam jarak dekat, mereka dapat membentuk medan elektromagnetik yang memungkinkan pertukaran data.</p>
+
+<p>Dalam konteks NFC, perangkat NFC menggunakan komponen kumparan induktif untuk menghasilkan medan elektromagnetik. Kumparan induktif berfungsi sebagai pengirim dan penerima medan elektromagnetik. Ketika arus listrik mengalir melalui kumparan, medan magnet terbentuk di sekitar kumparan tersebut. Perubahan arus listrik dalam kumparan akan menghasilkan perubahan medan magnet, dan perubahan medan magnet ini akan menginduksi arus listrik di kumparan lainnya yang berdekatan.</p>
+
+<p>Dalam komunikasi NFC, perangkat NFC bertindak bergantian sebagai pengirim dan penerima medan elektromagnetik. Ketika satu perangkat NFC mengirimkan sinyal, perangkat lainnya mendeteksi perubahan medan elektromagnetik dan merespons dengan mengirimkan sinyal kembali. Dengan demikian, pertukaran data dapat terjadi melalui perubahan medan elektromagnetik yang dihasilkan oleh perangkat NFC.</p>
+
+        <p> Secara sederhana, Prinsip dasar elektromagnetik menyatakan bahwa perubahan medan magnet akan menghasilkan medan listrik, dan sebaliknya, perubahan medan listrik akan menghasilkan medan magnet. Dalam konteks NFC, perangkat NFC menghasilkan medan elektromagnetik pada frekuensi operasi 13,56 MHz.</p>
+      </section>
+
+      <!-- Slide 5 -->
+      <section>
+        <h2>Mode Pembaca dan Mode Tag</h2>
+        <p>NFC memiliki dua mode utama: mode pembaca (reader mode) dan mode tag (tag mode).</p>
+        <p>NFC memiliki dua mode utama, yaitu mode pembaca (reader mode) dan mode tag (tag mode). Dalam mode pembaca, perangkat NFC bertindak sebagai pembaca yang menginisiasi dan mengontrol komunikasi dengan perangkat NFC lainnya. Dalam mode tag, perangkat NFC bertindak sebagai tag yang merespons permintaan dari pembaca NFC.</p>
+
+<p>Ketika perangkat pembaca NFC mendekati perangkat tag NFC, perangkat pembaca menghasilkan medan elektromagnetik dengan arus listrik yang mengalir melalui kumparan induktif. Medan elektromagnetik ini mempengaruhi kumparan induktif pada perangkat tag NFC, dan arus listrik diinduksi pada kumparan tag. Arus listrik ini kemudian digunakan oleh perangkat tag untuk mengirimkan informasi yang tersimpan dalam chip NFC-nya kepada perangkat pembaca.</p>
+
+<p>Selanjutnya, perangkat pembaca menerima sinyal dari perangkat tag dan mengolahnya untuk mendapatkan informasi yang dikirimkan oleh tag. Komunikasi ini terjadi dalam jarak yang sangat dekat karena medan elektromagnetik yang dihasilkan memiliki jangkauan yang terbatas pada frekuensi operasi NFC.</p>
+
+<p>Mode pembaca dan mode tag pada perangkat NFC memungkinkan perangkat untuk berinteraksi satu sama lain secara fleksibel. Mode pembaca memungkinkan perangkat untuk membaca informasi dari tag NFC yang pasif, sedangkan mode tag memungkinkan perangkat untuk menjadi tag yang merespons permintaan dari perangkat pembaca NFC. Hal ini memungkinkan berbagai aplikasi NFC, seperti pembayaran nirkabel, transfer data, identifikasi, dan masih banyak lagi.</p>
+      </section>
+
+      <!-- Slide 6 -->
+      <section>
+        <h2>Frekuensi Operasi NFC</h2>
+        <p>Frekuensi operasi NFC mengacu pada frekuensi radio yang digunakan dalam komunikasi jarak dekat NFC. NFC bekerja pada frekuensi 13,56 MHz. Frekuensi ini dipilih karena memiliki karakteristik yang menguntungkan dalam komunikasi jarak dekat. Pada frekuensi ini, medan elektromagnetik yang dihasilkan memiliki jangkauan yang terbatas, sehingga memungkinkan komunikasi NFC terjadi hanya dalam jarak yang sangat dekat antara perangkat NFC. Frekuensi operasi NFC yang seragam di seluruh dunia memungkinkan interoperabilitas dan kompatibilitas antara perangkat NFC yang berbeda.</p>
+	
+	<!-- Slide 7 -->
+      <section>
+        <h2>Proses Pertukaran Data dalam NFC</h2>
+        <p>Proses pertukaran data dalam NFC melibatkan komunikasi antara perangkat NFC pembaca dan perangkat NFC tag. Pertukaran data ini terjadi melalui medan elektromagnetik yang dibangkitkan oleh perangkat NFC. Proses dimulai dengan perangkat NFC pembaca mengirimkan permintaan kepada perangkat NFC tag. Permintaan ini dapat berupa permintaan untuk membaca informasi dari tag, menulis data ke tag, atau menjalankan suatu perintah tertentu. Perangkat NFC tag merespons permintaan tersebut dengan mengirimkan informasi yang diminta atau menjalankan perintah yang diterima. Respon dari perangkat NFC tag ditangkap oleh perangkat NFC pembaca melalui perubahan medan elektromagnetik. Pertukaran data ini terjadi dengan cepat dan aman dalam jarak dekat antara perangkat-perangkat NFC yang terlibat.</p>
+
+	<!-- Slide 8 -->
+      <section>
+        <h2>Terima kasih</h2>
+        <p>Sekian presentasi tentang NFC dan prinsip elektromagnetik.</p>
+	<p>Aman ya segini? aman lah ya harusnya</p>
+	<p>oiye gambar-gambar nya belum dah gimana tuh</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/js/reveal.min.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>
